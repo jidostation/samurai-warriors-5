@@ -7,7 +7,7 @@ Groups=Start:1
 3|[LoopStart]|LoopStart|0|0|Loop|||||6|
 4|[CommentBlock]|keep pressing circle to pass through scenario selection and character selection until "Begin Battle" found, then break the loop|0|1|CommentBlock|||||8|
 5|[LoopStart]|LoopStart|0|0|Loop|||||11|
-6|Break, Continue, FoundX, FoundY, 0|17, 458, 395, 684, *60 .\Screen_20230911180526.png|1|100|ImageSearch||Window|||13|
+6|Break, Continue, FoundX, FoundY, 0|17, 458, 395, 684, *120 .\Screen_20230911180526.png|1|100|ImageSearch||Window|||13|
 7|k Down|{k Down}|1|60|Send|||||18|
 8|k Up|{k Up}|1|300|Send|||||20|
 9|[LoopEnd]|LoopEnd|1|0|Loop|||||22|
