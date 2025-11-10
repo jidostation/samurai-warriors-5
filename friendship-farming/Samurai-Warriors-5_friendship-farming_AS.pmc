@@ -8,16 +8,16 @@ Groups=Start:1
 4|[CommentBlock]|keep pressing circle to pass through scenario selection and character selection until "Begin Battle" found, then break the loop|0|1|CommentBlock|||||8|
 5|[LoopStart]|LoopStart|0|0|Loop|||||11|
 6|Break, Continue, FoundX, FoundY, 0|17, 458, 395, 684, *120 .\Screen_20230911180526.png|1|100|ImageSearch||Window|||13|
-7|k Down|{k Down}|1|60|Send|||||18|
-8|k Up|{k Up}|1|300|Send|||||20|
+7|l|{l Down}|1|60|Send|||||18|
+8|l|{l Up}|1|300|Send|||||20|
 9|[LoopEnd]|LoopEnd|1|0|Loop|||||22|
 10|[CommentBlock]|follow the flow of "Begin Battle" found, press UP to move the cursor, then press circle to Begin Battle|0|1|CommentBlock|||||23|
 11|Up|{Up Down}|1|60|Send|||||26|
 12|Up|{Up Up}|1|60|Send|||||28|
 13|[CommentBlock]|keep pressing circle until "pt." image is found at the bottom right corner, indicate the stage is loaded and the battle began, then break the loop|0|1|CommentBlock|||keep pressing circle until "pt." image is found, incidate the stage is loaded and the battle began||30|
 14|[LoopStart]|LoopStart|0|0|Loop|||||33|
-15|k|{k Down}|1|60|Send|||||35|
-16|k|{k Up}|1|60|Send|||||37|
+15|l|{l Down}|1|60|Send|||||35|
+16|l|{l Up}|1|60|Send|||||37|
 17|Break, Continue, FoundX, FoundY, 0|1045, 601, 1286, 756, *60 .\Screen_20230912142440.png|1|0|ImageSearch||Window|||39|
 18|[LoopEnd]|LoopEnd|1|0|Loop|||||43|
 19|[CommentBlock]|Summon Unit 3 times|0|1|CommentBlock|||||44|
